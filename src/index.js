@@ -14,8 +14,10 @@ root.render(
 // force first page in menu to load when app loads
 setTimeout(function() {
     console.log('going to first page');
+    window.title = 'Event Management Website | TucsonLovesMusic';
     document.querySelector('.sidebarListItem').click();
 }, 400);
+window.title = 'Loading...';
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
