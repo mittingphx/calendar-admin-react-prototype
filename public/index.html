@@ -28,9 +28,10 @@
     <title>Event Management Website | TucsonLovesMusic</title>
     <script>
       // force first page in menu to load when app loads
-      window.onload = function () {
+      setTimeout(function() {
+        console.log('going to first page');
         document.querySelector('.sidebarListItem').click();
-      }
+      }, 400);
     </script>
   </head>
   <body>
