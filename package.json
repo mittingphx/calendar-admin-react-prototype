@@ -1,7 +1,8 @@
 {
-  "name": "admin-dashboard",
+  "name": "calendar-admin-react-prototype",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://mittingphx.github.io/calendar-admin-react-prototype/",
+  "private": false,
   "dependencies": {
     "@babel/plugin-transform-class-properties": "^7.25.9",
     "@babel/plugin-transform-nullish-coalescing-operator": "^7.25.9",
@@ -29,6 +30,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -51,5 +54,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
