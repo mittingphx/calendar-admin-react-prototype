@@ -26,6 +26,12 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Event Management Website | TucsonLovesMusic</title>
+    <script>
+      // force first page in menu to load when app loads
+      window.onload = function () {
+        document.querySelector('.sidebarListItem').click();
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
