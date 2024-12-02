@@ -10,7 +10,7 @@ of the platform) to manage the events calendar from the web.
 
 Both the React app and the source code are hosted on GitHub.
 
-* React app: [https://github.com/mittingphx/calendar-admin-react-prototype](https://github.com/mittingphx/calendar-admin-react-prototype)
+* Running the React app: <a href="https://mittingphx.github.io/mittingphx/calendar-admin-react-prototype" target="_blank">https://mittingphx.github.io/mittingphx/calendar-admin-react-prototype</a>
 * Source code: [https://github.com/mittingphx/calendar-admin-react-prototype](https://github.com/mittingphx/calendar-admin-react-prototype)
 
 
