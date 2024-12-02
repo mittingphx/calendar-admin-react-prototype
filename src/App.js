@@ -32,6 +32,10 @@ function App() {
                       selectedCity={selectedCity}
                       setSelectedCity={setSelectedCity}
                   />} />
+                  <Route path="/home" element={<Home
+                      selectedCity={selectedCity}
+                      setSelectedCity={setSelectedCity}
+                  />} />
                   <Route path="/dashboard" element={<Dashboard />} />
                   <Route path="/test" element={<Test />} />
                   <Route path="/users" element={<UserList />} />

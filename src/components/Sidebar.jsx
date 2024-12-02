@@ -29,8 +29,8 @@ function Sidebar() {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTitle">Dashboard</h3>
                     <ul className="sidebarList">
-                        <Link to="/" className="link">
-                            <li className={`sidebarListItem ${location.pathname === '/' ? 'active' : ''}`}>
+                        <Link to="/home" className="link">
+                            <li className={`sidebarListItem ${location.pathname === '/' || location.pathname === '/home' ? 'active' : ''}`}>
                                 <Home className="sidebarIcon" />
                                 Home
                             </li>
