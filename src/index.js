@@ -6,10 +6,16 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+        <App/>
+    </React.StrictMode>
 );
+
+// force first page in menu to load when app loads
+setTimeout(function() {
+    console.log('going to first page');
+    document.querySelector('.sidebarListItem').click();
+}, 400);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
