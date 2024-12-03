@@ -28,16 +28,38 @@ function Topbar() {
                         </div>
                     </div>
                     <div className="topbarIconContainer">
-                        <Language />
+                        <Language/>
                         <span className="topIconBadge">2</span>
+                        <div className="icon-menu">
+                            <div className="icon-menu-item">
+                                <span className="icon-menu-item-text">English</span>
+                            </div>
+                            <div className="icon-menu-item">
+                                <span className="icon-menu-item-text">Spanish</span>
+                            </div>
+                        </div>
                     </div>
                     <div className="topbarIconContainer">
-                        <Settings />
+                        <Settings/>
+                        <div className="icon-menu">
+                            <div className="icon-menu-item">
+                                <span className="icon-menu-item-text">Setting 1</span>
+                            </div>
+                            <div className="icon-menu-item">
+                                <span className="icon-menu-item-text">Setting 2</span>
+                            </div>
+                            <div className="icon-menu-item">
+                                <span className="icon-menu-item-text">Setting 3</span>
+                            </div>
+                        </div>
                     </div>
-                    <img src="https://images.pexels.com/photos/1526814/pexels-photo-1526814.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" className="topAvatar" />
+                    <img
+                        src="https://images.pexels.com/photos/1526814/pexels-photo-1526814.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                        alt="" className="topAvatar"/>
                 </div>
             </div>
         </div>
     );
 }
+
 export default Topbar;

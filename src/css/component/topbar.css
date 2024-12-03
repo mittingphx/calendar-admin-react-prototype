@@ -9,7 +9,7 @@
 
 .topbarWrapper {
     height: 100%;
-    padding: 0px 20px;
+    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -48,7 +48,7 @@
     height: 15px;
     position: absolute;
     top: -5px;
-    right: 0px;
+    right: 0;
     background-color: red;
     color: white;
     border-radius: 50%;
@@ -65,14 +65,32 @@
     cursor: pointer;
 }
 
-/* popup menus in topbar */
+/* --- popup menus in topbar --- */
+
 .icon-menu {
     position: absolute;
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 10px;
     display: none;
-    width: 200px;
+    width: 180px;
+    margin-left:-170px;
+    z-index: 50;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon-menu::before {
+    content: '';
+    position: absolute;
+    top: -7px; /* Adjust as needed */
+    left: 170px; /* Adjust as needed */
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid darkgrey; /* Customize color and thickness */
+    border-top: 2px solid darkgrey;
+    transform: rotate(45deg);
+    background: white;
+    z-index: 49;
 }
 
 .icon-menu-item {
