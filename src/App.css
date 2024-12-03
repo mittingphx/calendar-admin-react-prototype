@@ -46,3 +46,73 @@
   text-decoration: none;
   color: inherit;
 }
+
+/** The create button for form views */
+.add-button {
+  width: 140px;
+  border: none;
+  padding: 5px;
+  background-color: teal;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+
+
+/* data grid classes */
+.table-container {
+  display: flex;
+  flex: 4;
+  /*padding: 20px;*/
+}
+
+.table-header {
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-row {
+  border-bottom: 1px solid #ddd;
+
+}
+
+
+.table-cell {
+  padding: 10px;
+}
+
+.table-cell-image {
+  width: 30px;
+  position: absolute;
+  transition: transform 0.3s ease-in-out;
+  cursor: zoom-in;
+}
+
+.table-cell-image-label {
+  margin-left: 55px;
+}
+
+.table-cell-image:hover {
+  transform: scale(6);
+}
+
+
+.table-edit-button {
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: #3bb077;
+  color: white;
+  cursor: pointer;
+  margin-right: 20px;
+  position: relative;
+  top:-7px;
+  left:15px;
+}
+
+.table-delete-button {
+  color: red;
+  cursor: pointer;
+}
+

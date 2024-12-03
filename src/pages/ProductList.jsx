@@ -1,9 +1,10 @@
-import '../css/page/productList.css'
+import React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import { DeleteOutline } from "@material-ui/icons";
 import { productRows } from "../dummyData";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+
 function ProductList() {
     const [data, setData] = useState(productRows);
     const handleDelete = (id) => {
@@ -17,9 +18,9 @@ function ProductList() {
             width: 200,
             renderCell: (params) => {
                 return (
-                    <div className="productListItem">
-                        <img className="productListImg" src={params.row.img} alt="" />
-                        {params.row.name}
+                    <div className="table-cell">
+                        <img src={params.row.img} alt="" className="table-cell-image" />
+                        <div className="table-cell-image-label">{params.row.name}</div>
                     </div>
                 );
             },
@@ -41,29 +42,32 @@ function ProductList() {
             width: 150,
             renderCell: (params) => {
                 return (
-                    <>
+                    <div className="table-cell">
                         <Link to={"/product/" + params.row.id}>
-                            <button className="productListEdit">Edit</button>
+                            <button className="table-edit-button">Edit</button>
                         </Link>
                         <DeleteOutline
-                            className="productListDelete"
+                            className="table-delete-button"
                             onClick={() => handleDelete(params.row.id)}
                         />
-                    </>
+                    </div>
                 );
             },
+            flex: 1
         },
     ];
+
     return (
-        <div className="productList">
+        <div className="table-container">
             <DataGrid
                 rows={data}
-                disableSelectionOnClick
                 columns={columns}
-                pageSize={8}
+                pageSize={10}
+                rowsPerPageOptions={[10]}
                 checkboxSelection
             />
         </div>
     );
 }
+
 export default ProductList;

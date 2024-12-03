@@ -23,7 +23,7 @@ function Event() {
             <div className="eventTitleContainer">
                 <h1 className="eventTitle">Edit Event Information</h1>
                 <Link to="/newEvent">
-                    <button className="eventAddButton">Create New Event</button>
+                    <button className="eventAddButton add-button">Create New Event</button>
                 </Link>
             </div>
             <div className="eventContainer">

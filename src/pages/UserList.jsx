@@ -1,10 +1,10 @@
- //import "./userList.css";
-import '../css/page/userList.css'
+import React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import { DeleteOutline } from "@material-ui/icons";
 import { userRows } from "../dummyData";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+
 function UserList() {
     const [data, setData] = useState(userRows);
     const handleDelete = (id) => {
@@ -18,9 +18,9 @@ function UserList() {
             width: 200,
             renderCell: (params) => {
                 return (
-                    <div className="userListUser">
-                        <img className="userListImg" src={params.row.avatar} alt="" />
-                        {params.row.username}
+                    <div className="table-cell">
+                        <img className="table-cell-image" src={params.row.avatar} alt="" />
+                        <div className="table-cell-image-label">{params.row.username}</div>
                     </div>
                 );
             },
@@ -42,29 +42,31 @@ function UserList() {
             width: 150,
             renderCell: (params) => {
                 return (
-                    <>
+                    <div className="table-cell">
                         <Link to={"/user/" + params.row.id}>
-                            <button className="userListEdit">Edit</button>
+                            <button className="table-edit-button">Edit</button>
                         </Link>
                         <DeleteOutline
-                            className="userListDelete"
+                            className="table-delete-button"
                             onClick={() => handleDelete(params.row.id)}
                         />
-                    </>
+                    </div>
                 );
             },
         },
     ];
+
     return (
-        <div className="userList">
+        <div className="table-container">
             <DataGrid
                 rows={data}
-                disableSelectionOnClick
                 columns={columns}
                 pageSize={10}
+                rowsPerPageOptions={[10]}
                 checkboxSelection
             />
         </div>
     );
 }
+
 export default UserList;

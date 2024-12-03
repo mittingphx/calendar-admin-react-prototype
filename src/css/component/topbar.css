@@ -64,3 +64,26 @@
     border-radius: 50%;
     cursor: pointer;
 }
+
+/* popup menus in topbar */
+.icon-menu {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: none;
+    width: 200px;
+}
+
+.icon-menu-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.icon-menu-item:hover {
+    background-color: #f0f0f0;
+}
+
+.topbarIconContainer:hover .icon-menu {
+    display: block;
+}

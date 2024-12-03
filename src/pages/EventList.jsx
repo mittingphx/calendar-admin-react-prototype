@@ -1,9 +1,10 @@
-import '../css/page/eventList.css'
+import React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import { DeleteOutline } from "@material-ui/icons";
 import { eventRows } from "../dummyData";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import "../css/page/eventList.css";
 
 function EventList() {
     const [data, setData] = useState(eventRows);
@@ -18,9 +19,9 @@ function EventList() {
             width: 200,
             renderCell: (params) => {
                 return (
-                    <div className="eventListEvent">
-                        <img className="eventListImg" src={params.row.image} alt="" />
-                        {params.row.name}
+                    <div className="table-cell">
+                        <img className="table-cell-image" src={params.row.image} alt="" />
+                        <div className="table-cell-image-label">{params.row.name}</div>
                     </div>
                 );
             },
@@ -33,18 +34,28 @@ function EventList() {
             width: 150,
             renderCell: (params) => {
                 return (
-                <>
+                  <div className="table-cell">
                     <Link to={"/event/" + params.row.id} className="gridEdit">
-                        <button className="eventListEdit">Edit</button>
+                        <button className="table-edit-button">Edit</button>
                     </Link>
                     <DeleteOutline
-                        className="eventListDelete"
+                        className="table-delete-button"
                         onClick={() => handleDelete(params.row.id)}
                     />
-                </>
+                  </div>
                 );
             },
         },
+        {
+          renderCell: (params) => {
+            return (
+              <div className="table-cell-fill"></div>
+            );
+          },
+          width: "100",
+          headerName: " ",
+          sort: false
+        }
     ];
 
     return (

@@ -15,6 +15,17 @@ function Topbar() {
                     <div className="topbarIconContainer">
                         <NotificationsNone />
                         <span className="topIconBadge">2</span>
+                        <div className="icon-menu">
+                            <div className="icon-menu-item">
+                                <span className="icon-menu-item-text">Event 1</span>
+                            </div>
+                            <div className="icon-menu-item">
+                                <span className="icon-menu-item-text">Event 2</span>
+                            </div>
+                            <div className="icon-menu-item">
+                                <span className="icon-menu-item-text">Event 3</span>
+                            </div>
+                        </div>
                     </div>
                     <div className="topbarIconContainer">
                         <Language />
