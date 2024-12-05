@@ -1,0 +1,153 @@
+/**
+ * File:    form.css
+ * Author:  Scott Mitting
+ * Date:    12/3/2024
+ * Project: TLA
+ * Abstract:
+ *   CSS for common forms on the application.
+ */
+
+.formShow {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add this line to add space between elements on smaller screens */
+}
+
+/* Add media query to adjust layout on smaller screens */
+@media only screen and (max-width: 768px) {
+    .formShow {
+        flex-basis: 100%; /* Make each element take up full width on smaller screens */
+    }
+}
+
+
+.formUpdate {
+    flex: 2;
+    padding: 20px;
+    -webkit-box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
+    margin-left: 20px;
+}
+
+.formShowTop {
+    display: flex;
+    align-items: center;
+}
+
+.formShowImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.formShowTopTitle {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.formShowUsername {
+    font-weight: 600;
+}
+
+.formShowUserTitle {
+    font-weight: 300;
+}
+
+.formShowBottom {
+    margin-top: 10px;
+}
+
+.formShowTitle {
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.formShowInfo {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    color: #444;
+}
+
+.formShowIcon {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.formShowInfoTitle {
+    font-weight: 600;
+}
+
+.formUpdateLeft {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.formUpdateItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.formUpdateItem > label {
+    font-weight: 600;
+    margin-right: 10px;
+    width: 100px;
+}
+
+.formUpdateItem > input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+}
+
+.formUpdateRight {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 20px;
+}
+
+.formUpdateUpload {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.formUpdateImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.formUpdateButton {
+    border: none;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.formUpdateButton:hover {
+    background-color: #0069d9;
+}
+
+.formContainer {
+    display: flex;
+    flex-wrap: wrap; /* Add this line to allow wrapping on smaller screens */
+}
+
+.formShowTop {
+    display: flex;
+    align-items: center;
+}

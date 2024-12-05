@@ -7,13 +7,20 @@
     margin: 20px;
 }
 
+/*
 .home > .logo {
     width: 500px;
     left: 50%;
     position: relative;
     margin-left: -250px;
 }
+*/
 
+.home > .logo {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Make the image cover the entire area */
+}
 
 
 .city-dropdown {

@@ -1,3 +1,12 @@
+/**
+ * File:    featuredInfo.css
+ * Author:  Scott Mitting
+ * Date:    12/3/2024
+ * Project: TLA
+ * Abstract:
+ *   CSS for the featuredInfo component of the application.
+ */
+
 .featured {
     width: 100%;
     display: flex;

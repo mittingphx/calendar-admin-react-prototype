@@ -1,3 +1,12 @@
+/**
+ * File:    userList.css
+ * Author:  Scott Mitting
+ * Date:    12/3/2024
+ * Project: TLA
+ * Abstract:
+ *   CSS for the user list page of the application.
+ */
+
 .userList {
     flex: 4;
 }
@@ -54,4 +63,34 @@
 
 .usersListTable td:last-child {
     text-align: center;
+}
+
+.userListContainer {
+    overflow-x: auto; /* Add this line to allow horizontal scrolling on smaller screens */
+}
+
+.MuiDataGrid-root {
+    width: 100%; /* Add this line to make the DataGrid take up full width */
+}
+
+.MuiDataGrid-columnHeaders {
+    white-space: nowrap; /* Add this line to prevent column headers from wrapping */
+}
+
+.MuiDataGrid-row {
+    flex-wrap: wrap; /* Add this line to allow rows to wrap on smaller screens */
+}
+
+.MuiDataGrid-cell {
+    flex-basis: 100%; /* Add this line to make cells take up full width on smaller screens */
+}
+
+/* Add media query to adjust layout on smaller screens */
+@media only screen and (max-width: 768px) {
+    .MuiDataGrid-columnHeaders {
+        font-size: 12px; /* Reduce font size of column headers on smaller screens */
+    }
+    .MuiDataGrid-cell {
+        font-size: 12px; /* Reduce font size of cells on smaller screens */
+    }
 }

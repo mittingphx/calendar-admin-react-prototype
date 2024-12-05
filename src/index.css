@@ -1,3 +1,12 @@
+/**
+ * File:    index.css
+ * Author:  Scott Mitting
+ * Date:    12/3/2024
+ * Project: React Examples
+ * Abstract:
+ *   Global styles for the React app prototype admin website.
+ */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

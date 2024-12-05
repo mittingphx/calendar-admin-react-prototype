@@ -1,4 +1,13 @@
+/**
+ * File:    WidgetLg.jsx
+ * Author:  React Examples Team
+ * Project: React Examples
+ * Abstract:
+ *  Example data component for the React app prototype admin website.
+ */
+
 import '../css/component/widgetLg.css'
+
 function WidgetLg() {
     const Button = ({ type }) => {
         return <button className={"widgetLgButton " + type}>{type}</button>;

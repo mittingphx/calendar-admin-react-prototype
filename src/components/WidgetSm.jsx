@@ -1,5 +1,15 @@
-import '../css/component/widgetSm.css'
+/**
+ * File:    WidgetSm.jsx
+ * Author:  React Examples Team
+ * Project: React Examples
+ * Abstract:
+ *  Example data component for the React app prototype admin website.
+ */
+
 import { Visibility } from "@material-ui/icons";
+
+import '../css/component/widgetSm.css'
+
 function WidgetSm() {
     return (
         <div className="widgetSm">

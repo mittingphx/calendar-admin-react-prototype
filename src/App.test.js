@@ -1,3 +1,11 @@
+/**
+ * File:    App.test.js
+ * Author:  Scott Mitting
+ * Date:    12/3/2024
+ * Project: TucsonLovesMusic
+ * Abstract:
+ *   Test file for the React app prototype admin website.
+ */
 import { render, screen } from '@testing-library/react';
 import App from './App';
 

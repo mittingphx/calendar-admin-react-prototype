@@ -1,3 +1,11 @@
+/**
+ * File:    FeaturedInfo.jsx
+ * Author:  MUI Examples Team
+ * Project:  MUI Examples
+ * Abstract:
+ *  Example data component for the React app prototype admin website.
+ */
+
 import '../css/component/featuredInfo.css'
 import { ArrowDownward, ArrowUpward } from "@material-ui/icons";
 function FeaturedInfo() {

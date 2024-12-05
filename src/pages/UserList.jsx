@@ -58,13 +58,23 @@ function UserList() {
 
     return (
         <div className="table-container">
-            <DataGrid
+            {/*<DataGrid
                 rows={data}
                 columns={columns}
                 pageSize={10}
                 rowsPerPageOptions={[10]}
                 checkboxSelection
+            />*/}
+
+            <DataGrid
+                columns={columns}
+                rows={userRows}
+                pageSize={10}
+                rowsPerPageOptions={[10, 20, 50]}
+                autoHeight
+                className="userListContainer"
             />
+
         </div>
     );
 }

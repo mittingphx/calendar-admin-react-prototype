@@ -1,3 +1,12 @@
+/**
+ * File:    Event.css
+ * Author:  Scott Mitting
+ * Date:    12/3/2024
+ * Project: TLA
+ * Abstract:
+ *   CSS for the event details page of the application.
+ */
+
 .event {
     flex: 4;
     padding: 20px;
@@ -17,6 +26,7 @@
 
 .eventContainer {
     display: flex;
+    flex-wrap: wrap; /* Add this line to allow wrapping on smaller screens */
     margin-top: 20px;
 }
 
@@ -30,6 +40,13 @@
 .eventShowTop {
     display: flex;
     align-items: center;
+}
+
+/* Add media query to adjust layout on smaller screens */
+@media only screen and (max-width: 768px) {
+    .eventShow {
+        flex-basis: 100%; /* Make each element take up full width on smaller screens */
+    }
 }
 
 .eventShowImg {

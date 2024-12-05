@@ -1,9 +1,17 @@
+/**
+ * File:    EventList.jsx
+ * Author:  Scott Mitting
+ * Date:    12/3/2024
+ * Abstract:
+ *  List of events on the TucsonLovesMusic React prototype admin website.
+ */
+
 import React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import { DeleteOutline } from "@material-ui/icons";
-import { eventRows } from "../dummyData";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { eventRows } from "../dummyData";
 import "../css/page/eventList.css";
 
 function EventList() {
@@ -60,12 +68,21 @@ function EventList() {
 
     return (
         <div className="eventList">
-            <DataGrid
+            {/*<DataGrid
                 rows={data}
                 columns={columns}
                 pageSize={10}
                 rowsPerPageOptions={[10]}
                 checkboxSelection
+            /> */}
+
+            <DataGrid
+                columns={columns}
+                rows={eventRows}
+                pageSize={10}
+                rowsPerPageOptions={[10, 20, 50]}
+                autoHeight
+                className="eventListContainer"
             />
         </div>
     );

@@ -1,3 +1,12 @@
+/**
+ * File:    widgetLg.css
+ * Author:  Scott Mitting
+ * Date:    12/3/2024
+ * Project: TLA
+ * Abstract:
+ *     CSS for the widgetLg component of the application.
+ */
+
 .widgetLg {
     flex: 2;
     -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);

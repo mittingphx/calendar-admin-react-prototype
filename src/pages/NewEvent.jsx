@@ -1,3 +1,12 @@
+/**0
+ * File:    NewEvent.jsx
+ * Author:  Scott Mitting
+ * Date:    12/3/2024
+ * Project: TucsonLovesMusic
+ * Abstract:
+ *   Page for creating a new event on the React app prototype admin website.
+ */
+
 import '../css/page/newEvent.css'
 
 function NewEvent() {

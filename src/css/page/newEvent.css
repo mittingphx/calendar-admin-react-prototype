@@ -1,3 +1,13 @@
+/**
+ * File:    newEvent.css
+ * Author:  Scott Mitting
+ * Date:    12/3/2024
+ * Project: TLA
+ * Abstract:
+ *   CSS for the event details page of the application.
+ */
+
+
 .newEventContainer {
     width: 100%;
     padding: 20px;

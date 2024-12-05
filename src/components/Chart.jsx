@@ -1,4 +1,11 @@
-import '../css/component/chart.css'
+/**
+ * File:    Chart.jsx
+ * Author:  React Examples Team
+ * Project: React Examples
+ * Abstract:
+ *  Example data component for the React app prototype admin website.
+ */
+
 import {
     LineChart,
     Line,
@@ -7,6 +14,9 @@ import {
     Tooltip,
     ResponsiveContainer,
 } from "recharts";
+
+import '../css/component/chart.css'
+
 function Chart({ title, data, dataKey, grid }) {
     return (
         <div className="chart">

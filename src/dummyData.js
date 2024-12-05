@@ -1,3 +1,16 @@
+/**
+ * File: src/dummyData.js
+ * Author: Scott Mitting
+ * Date: 12/3/2024
+ * Project: TucsonLovesMusic
+ * Abstract:
+ *   Dummy data for the React app prototype admin website.
+ */
+
+/**
+ * Example user data.
+ * @type {[{name: string, "Active User": number},{name: string, "Active User": number}]}
+ */
 export const userData = [
     {
         name: "Jan",
@@ -8,16 +21,11 @@ export const userData = [
         "Active User": 3000,
     },
 ];
-export const productData = [
-    {
-        name: "Jan",
-        "Sales": 4000,
-    },
-    {
-        name: "Feb",
-        "Sales": 3000,
-    },
-];
+
+/**
+ * Example list of users for editing in the data grid and form.
+ * @type {[{id: number, avatar: string, email: string, transaction: string, username: string, status: string},{id: number, avatar: string, email: string, transaction: string, username: string, status: string}]}
+ */
 export const userRows = [
     {
         id: 1,
@@ -38,28 +46,11 @@ export const userRows = [
         transaction: "$320.00",
     },
 ];
-export const productRows = [
-    {
-        id: 1,
-        name: "Apple Airpods",
-        img:
-            "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-        stock: 123,
-        status: "active",
-        price: "$120.00",
-    },
-    {
-        id: 2,
-        name: "Apple Watch Series 6",
-        img:
-            "https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/G/I/174379_1610801608.jpg",
-        stock: 123,
-        status: "active",
-        price: "$270.00",
-    },
-];
 
-
+/**
+ * Example list of events for editing in the data grid and form.
+ * @type {[{id: number, name: string, image: string, date: string, location: string},{id: number, name: string, image: string, date: string, location: string}]}
+ */
 export const eventRows = [
     {
         id: 1,
@@ -85,4 +76,24 @@ export const eventRows = [
         date: "2023-05-01",
         location: "Chicago",
     },
+];
+
+
+/**
+ * List of available markets for the dropdown menu.
+ * @type {string[]}
+ */
+export const availableMarkets = [
+    'Tucson',
+    'Phoenix',
+    'Austin',
+    'Nashville',
+    'New Orleans',
+    'Seattle',
+    'Portland',
+    'Denver',
+    'Minneapolis',
+    'Boston',
+    'Chicago',
+    'Los Angeles',
 ];

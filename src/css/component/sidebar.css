@@ -1,3 +1,14 @@
+/**
+ * File:    sidebar.css
+ * Author:  Scott Mitting
+ * Date:    12/3/2024
+ * Project: TLA
+ * Abstract:
+ *   CSS for the sidebar component of the application.
+ */
+
+
+
 .sidebar {
     /*flex: 1;*/
     width:250px;
@@ -42,4 +53,51 @@
 .sidebarIcon{
     margin-right: 5px;
     font-size: 20px !important;
+}
+
+
+
+.sidebar-mobile {
+    display: block; /* Show the sidebar as a dropdown menu on mobile devices */
+    position: absolute;
+    top: 50px; /* Adjust the top position to match the topbar height */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-mobile {
+    display: none; /* off by default */
+}
+
+.sidebar-mobile ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-mobile li {
+    margin-bottom: 10px;
+}
+
+.sidebar-mobile a {
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebar-mobile a:hover {
+    color: #666;
+}
+
+/* Add media query to show the sidebar as a dropdown menu on mobile devices */
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    .sidebar-mobile {
+        display: block;
+    }
 }

@@ -1,3 +1,12 @@
+/**
+ * File:    dashboard.css
+ * Author:  Scott Mitting
+ * Date:    12/3/2024
+ * Project: TucsonLovesMusic
+ * Abstract:
+ *   CSS for the dashboard page of the application.
+ */
+
 .home{
     flex: 4;
 }

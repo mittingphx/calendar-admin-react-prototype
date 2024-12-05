@@ -1,5 +1,13 @@
-import '../css/page/newUser.css'
+/**
+ * File:    NewUser.jsx
+ * Author:  Scott Mitting
+ * Date:    12/3/2024
+ * Project: TucsonLovesMusic
+ * Abstract:
+ *   Page for creating a new user on the React app prototype admin website.
+ */
 
+import '../css/page/newUser.css'
 
 function NewUser() {
     return (

@@ -1,11 +1,27 @@
-import React, { useContext } from 'react';
+import React, {useContext, useState} from 'react';
 import { CityContext } from '../CityContext';
 import '../css/component/topbar.css'
 import { NotificationsNone, Language, Settings } from "@material-ui/icons";
 function Topbar() {
     const { selectedCity } = useContext(CityContext);
+
+
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+
     return (
         <div className="topbar">
+
+            <div className="topbarWrapper">
+                <div className="topbarRight">
+                    <button className="hamburger-menu" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+
             <div className="topbarWrapper">
                 <div className="topLeft">
                     <span className="logo">{selectedCity}LovesMusic</span>

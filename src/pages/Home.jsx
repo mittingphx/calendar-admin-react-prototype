@@ -1,23 +1,17 @@
+/**
+ * File:    Home.jsx
+ * Author:  Scott Mitting
+ * Date:    12/3/2024
+ * Project: TucsonLovesMusic
+ * Abstract:
+ *  Home page that displays a lf
+ */
+
 import React, { useContext } from 'react';
 import { CityContext } from '../CityContext';
+import { availableMarkets } from "../dummyData";
 
 import '../css/page/home.css'
-
-
-const availableMarkets = [
-    'Tucson',
-    'Phoenix',
-    'Austin',
-    'Nashville',
-    'New Orleans',
-    'Seattle',
-    'Portland',
-    'Denver',
-    'Minneapolis',
-    'Boston',
-    'Chicago',
-    'Los Angeles',
-];
 
 function Home() {
     const { selectedCity, handleCityChange } = useContext(CityContext);
