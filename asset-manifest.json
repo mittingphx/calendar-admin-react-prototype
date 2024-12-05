@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/calendar-admin-react-prototype/static/css/main.04f7c5b8.css",
-    "main.js": "/calendar-admin-react-prototype/static/js/main.2e698e54.js",
+    "main.css": "/calendar-admin-react-prototype/static/css/main.dfebb874.css",
+    "main.js": "/calendar-admin-react-prototype/static/js/main.015c63eb.js",
     "static/js/453.6aa71faa.chunk.js": "/calendar-admin-react-prototype/static/js/453.6aa71faa.chunk.js",
     "index.html": "/calendar-admin-react-prototype/index.html",
-    "main.04f7c5b8.css.map": "/calendar-admin-react-prototype/static/css/main.04f7c5b8.css.map",
-    "main.2e698e54.js.map": "/calendar-admin-react-prototype/static/js/main.2e698e54.js.map",
+    "main.dfebb874.css.map": "/calendar-admin-react-prototype/static/css/main.dfebb874.css.map",
+    "main.015c63eb.js.map": "/calendar-admin-react-prototype/static/js/main.015c63eb.js.map",
     "453.6aa71faa.chunk.js.map": "/calendar-admin-react-prototype/static/js/453.6aa71faa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.04f7c5b8.css",
-    "static/js/main.2e698e54.js"
+    "static/css/main.dfebb874.css",
+    "static/js/main.015c63eb.js"
   ]
 }
