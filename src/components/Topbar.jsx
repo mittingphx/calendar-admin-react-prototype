@@ -1,35 +1,34 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext} from 'react';
+import { NotificationsNone, Language, Settings, Menu as MenuIcon } from "@material-ui/icons";
+import IconButton from "@material-ui/core/IconButton";
 import { CityContext } from '../CityContext';
-import '../css/component/topbar.css'
-import { NotificationsNone, Language, Settings } from "@material-ui/icons";
+import { SidebarContext } from '../SidebarContext';
+import '../css/component/topbar.css';
+
+
+
+
 function Topbar() {
     const { selectedCity } = useContext(CityContext);
-
-
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
+    const { isSidebarOpen, setIsSidebarOpen } = useContext(SidebarContext);
 
     return (
         <div className="topbar">
-
             <div className="topbarWrapper">
+
                 <div className="topbarRight">
-                    <button className="hamburger-menu" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+                    <IconButton className="hamburger-menu" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
+                        <MenuIcon/>
+                    </IconButton>
                 </div>
-            </div>
 
-            <div className="topbarWrapper">
                 <div className="topLeft">
                     <span className="logo">{selectedCity}LovesMusic</span>
                     <span className="subtitle">Event Management</span>
                 </div>
                 <div className="topRight">
                     <div className="topbarIconContainer">
-                        <NotificationsNone />
+                        <NotificationsNone/>
                         <span className="topIconBadge">2</span>
                         <div className="icon-menu">
                             <div className="icon-menu-item">

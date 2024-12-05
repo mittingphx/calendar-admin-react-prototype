@@ -8,7 +8,7 @@
 
 import { createContext, useState, useEffect } from 'react';
 
-const CityContext = createContext();
+const CityContext = createContext(undefined);
 
 const CityProvider = ({ children }) => {
     const [selectedCity, setSelectedCity] = useState(() => {

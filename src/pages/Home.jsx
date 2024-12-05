@@ -4,7 +4,7 @@
  * Date:    12/3/2024
  * Project: TucsonLovesMusic
  * Abstract:
- *  Home page that displays a lf
+ *  Home page that displays a logo for the React app prototype admin website.
  */
 
 import React, { useContext } from 'react';

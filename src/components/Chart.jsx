@@ -18,6 +18,7 @@ import {
 import '../css/component/chart.css'
 
 function Chart({ title, data, dataKey, grid }) {
+    // noinspection PointlessArithmeticExpressionJS
     return (
         <div className="chart">
             <h3 className="chartTitle"> {title}</h3>

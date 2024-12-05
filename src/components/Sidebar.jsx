@@ -10,10 +10,11 @@
 import {
     LineStyle,
     PermIdentity,
-    Storefront,
     EventAvailable,
     Home,
-/*    Timeline,
+/*
+    Storefront,
+    Timeline,
     TrendingUp,
     AttachMoney,
     BarChart,
@@ -23,16 +24,16 @@ import {
     WorkOutline,
     Report,*/
 } from "@material-ui/icons";
-import { Link } from "react-router-dom";
-import { useLocation } from 'react-router-dom';
-import { useState } from 'react';
+import React, { useContext } from 'react';
+import { useLocation, Link } from 'react-router-dom';
+import { SidebarContext } from '../SidebarContext';
 
 import '../css/component/sidebar.css'
 
 function Sidebar() {
     const location = useLocation();
+    const { isSidebarOpen } = useContext(SidebarContext);
 
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     return (
         <div>

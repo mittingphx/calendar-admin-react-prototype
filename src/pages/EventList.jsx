@@ -1,3 +1,5 @@
+// noinspection JSUnusedLocalSymbols
+
 /**
  * File:    EventList.jsx
  * Author:  Scott Mitting
@@ -19,6 +21,7 @@ function EventList() {
     const handleDelete = (id) => {
         setData(data.filter((item) => item.id !== id));
     };
+    // noinspection JSUnusedLocalSymbols
     const columns = [
         { field: "id", headerName: "ID", width: 90 },
         {
@@ -55,7 +58,7 @@ function EventList() {
             },
         },
         {
-          renderCell: (params) => {
+          renderCell: () => {
             return (
               <div className="table-cell-fill"></div>
             );
@@ -81,7 +84,7 @@ function EventList() {
                 rows={eventRows}
                 pageSize={10}
                 rowsPerPageOptions={[10, 20, 50]}
-                autoHeight
+
                 className="eventListContainer"
             />
         </div>
